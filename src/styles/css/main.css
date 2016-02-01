@@ -1,0 +1,35 @@
+body {
+  background-color: #4C2B36; }
+
+.wrapper {
+  display: block;
+  margin: 20px 25% 20px 25%; }
+  .wrapper h1 {
+    font-size: 3rem;
+    color: #c0c4cf; }
+  .wrapper .form-fields {
+    padding: 20px 0 0 0;
+    display: block;
+    background: #dddfe5;
+    text-align: center;
+    font-size: 18px; }
+    .wrapper .form-fields label {
+      font-size: 2rem; }
+    .wrapper .form-fields input {
+      display: block;
+      margin: 20px auto 20px auto;
+      width: 60%;
+      font-size: 2rem; }
+      .wrapper .form-fields input.warning {
+        border: 1px solid red; }
+    .wrapper .form-fields button {
+      height: 2rem;
+      width: 25%;
+      margin: 2rem 0 2rem 0; }
+  .wrapper h2 {
+    color: #c0c4cf; }
+  .wrapper a {
+    color: #c0c4cf;
+    text-decoration: none; }
+    .wrapper a:hover {
+      color: white; }

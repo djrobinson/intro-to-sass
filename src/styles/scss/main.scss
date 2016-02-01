@@ -1,0 +1,67 @@
+@import "variables";
+
+@mixin warning($color) {
+  &.warning{
+    border: 1px solid $color;
+  }
+}
+
+@mixin linkColors ($color){
+  a {
+    color: $color;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($color, 30%);
+    }
+  }
+}
+
+body {
+  background-color: $background;
+}
+
+.wrapper {
+
+  display: block;
+  margin:  20px 25% 20px 25%;
+
+  h1 {
+    font-size: 3rem;
+    color: $light-font-color;
+  }
+
+  .form-fields {
+    padding: 20px 0 0 0;
+    display: block;
+    background: $light;
+    text-align: center;
+    font-size: $standard-font-size;
+
+    label {
+      font-size: 2rem;
+    }
+
+    input {
+      @include warning(red);
+      display: block;
+      margin: 20px auto 20px auto;
+      width: 60%;
+      font-size: 2rem;
+
+    }
+
+    button{
+      height: 2rem;
+      width: 25%;
+      margin: 2rem 0 2rem 0;
+    }
+
+  }
+  h2 {
+    color: $light-font-color;
+  }
+  @include linkColors($light-font-color);
+
+}
+
